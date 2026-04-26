@@ -3,10 +3,10 @@ local M = {}
 function M.setup(opts)
 	opts = opts or {}
 
-	vim.notify("weaudit.nvim loaded 🚀", vim.log.levels.INFO)
+	vim.notify("audit.nvim loaded 🚀", vim.log.levels.INFO)
 
-	vim.api.nvim_create_user_command("WeAudit", function()
-		require("weaudit").run()
+	vim.api.nvim_create_user_command("audit", function()
+		require("audit").run()
 	end, {})
 end
 
